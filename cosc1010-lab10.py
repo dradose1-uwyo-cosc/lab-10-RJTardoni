@@ -18,16 +18,24 @@ def get_hash(to_hash):
     return sha256(to_hash.encode('utf-8')).hexdigest().upper()
 
 
-#loop
-#path=Path(hash)
-#contents = path.read_text()
-#or open rockyou?
-#path = Path ('rockyou.txt')
-#contents = path.read_text()
-#how to use hash function?
-#get_hash
-# try read text file?
-#except block for if its not the right one?
+path = Path('hash')
+path2 = Path('rockyou.txt')
+
+try:
+    content = path.read_text()
+    content2 = path2.read_text()
+    rockline=content2.split()
+
+    for line in rockline:
+        hashline = get_hash(line)
+    
+        if hashline == content:
+            print(line)
+            break
+            
+except:
+    print("error")
+
 
 
 # Files and Exceptions
