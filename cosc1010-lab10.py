@@ -1,8 +1,8 @@
-# Your Name Here
+# RJ Tardoni
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
+# Submission Date [11/18/2024]
+# Lab 10
+# Lab Section: 14 
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -43,3 +43,5 @@ def get_hash(to_hash):
 # Hash each individual password and compare it against the stored hash.
 # - When you find the match, print the plaintext version of the password.
 # - End your loop.
+
+
